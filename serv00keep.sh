@@ -1240,6 +1240,9 @@ Argo域名：${argodomain}
 一、Vless-reality分享链接如下：
 $vl_link
 
+EOF
+if [[ "$reym" == "blog.cloudflare.com" ]]; then
+cat >> list.txt <<EOF
 注意：如果之前输入的reality域名为CF域名，将激活以下功能：
 可应用在 https://github.com/yonggekkk/Cloudflare_vless_trojan 项目中创建CF vless/trojan 节点
 1、Proxyip(带端口)信息如下：
@@ -1256,6 +1259,9 @@ CF节点落地到非CF网站的地区为：$IP所在地区
 注：如果serv00的IP被墙，proxyip依旧有效，但用于客户端地址的非标端口反代IP将不可用
 注：可能有大佬会扫Serv00的反代IP作为其共享IP库或者出售，请慎重将reality域名设置为CF域名
 -------------------------------------------------------------------------------------------------
+EOF
+fi
+cat >> list.txt <<EOF
 
 
 二、Vmess-ws分享链接三形态如下：
